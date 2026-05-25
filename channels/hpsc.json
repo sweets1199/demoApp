@@ -1,0 +1,39 @@
+{
+  "target_url": "https://hpsc.gov.in/en-us/Notifications/Announcements",
+  "list_container": "table tr:nth-child(n+2)",
+  "fields": {
+    "publish_date": "td:nth-child(1)",
+    "title": "td:nth-child(2)"
+  },
+  "metadata_extractors": {
+    "doc_url": "td:nth-child(2) a::attr(href)"
+  },
+  "static_values": {
+    "sender": "announcements"
+  },
+  "transformers": {
+    "clean_whitespace": [
+      "publish_date", 
+      "title"
+    ],
+    "replace_text": {
+      "fields": ["publish_date"],
+      "target": ".",
+      "replacement": "-"
+    },
+    "date_format": {
+      "fields": ["publish_date"],
+      "input_formats": ["dd-MM-yyyy", "d-M-yyyy"],
+      "output_format": "yyyy-MM-dd"
+    },
+    "resolve_url": [
+      "doc_url"
+    ]
+  },
+  "filters": {
+    "max_age_months": {
+      "field": "publish_date",
+      "limit": 12
+    }
+  }
+}
