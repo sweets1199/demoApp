@@ -1,8 +1,8 @@
 {
   "path": "/public-notices/",
-  "list_container": "div.wpb_wrapper ul li",
+  "list_container": "div.wpb_wrapper > ul > li",
   "fields": {
-    "title": "a"
+    "title": "_self_"
   },
   "metadata_extractors": {
     "external_url": "a::attr(href)"
