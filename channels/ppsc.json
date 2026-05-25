@@ -1,0 +1,37 @@
+{
+  "target_url": "https://www.ppsc.gov.in/index.aspx?page=309&tabid=34&tablinkid=1353&tablinkyes=1",
+  "headers": {
+    "Host": "www.ppsc.gov.in",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0",
+    "Referer": "https://www.ppsc.gov.in/"
+  },
+  "list_container": "table#MainContent_gvaddtab tr:nth-child(n+2):not(:last-child)",
+  "fields": {
+    "title": "a",
+    "raw_date_source": "a"
+  },
+  "metadata_extractors": {
+    "external_url": "a::attr(href)"
+  },
+  "static_values": {
+    "sender": "Announcement"
+  },
+  "transformers": {
+    "clean_whitespace": [
+      "title"
+    ],
+    "regex_extract": {
+      "publish_date": {
+        "source": "raw_date_source",
+        "pattern": "\\s+(\\S+)$"
+      }
+    },
+    "filter_invalid_urls": {
+      "fields": ["external_url"],
+      "reject_contains": ["javascript:"]
+    },
+    "resolve_url": [
+      "external_url"
+    ]
+  }
+}
