@@ -1,0 +1,28 @@
+{
+  "target_url": "https://rpsc.rajasthan.gov.in/news",
+  "list_container": "div.linkContainer > a",
+  "fields": {
+    "publish_date": "span",
+    "title": "a"
+  },
+  "metadata_extractors": {
+    "external_url": "_self_::attr(href)"
+  },
+  "static_values": {
+    "sender": "news"
+  },
+  "transformers": {
+    "clean_whitespace": [
+      "publish_date",
+      "title"
+    ],
+    "date_format": {
+      "fields": ["publish_date"],
+      "input_formats": ["dd/MM/yyyy", "d/M/yyyy"],
+      "output_format": "yyyy-MM-dd"
+    },
+    "resolve_url": [
+      "external_url"
+    ]
+  }
+}
