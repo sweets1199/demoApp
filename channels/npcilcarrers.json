@@ -1,0 +1,35 @@
+{
+  "target_url": "https://npcilcareers.co.in/MainSiten/DefaultInfo.aspx",
+  "list_container": "div.card",
+  "fields": {
+    "sender": "div.card-header"
+  },
+  "nested_lists": {
+    "table_rows": {
+      "list_container": "table tr:nth-child(n+2)",
+      "fields": {
+        "title": "td:nth-child(2)",
+        "publish_date": "td:nth-child(3)",
+        "last_date": "td:nth-child(4)",
+        "current_status": "td:nth-child(5)"
+      },
+      "metadata_extractors": {
+        "doc_url": "td:nth-child(2) a::attr(href)",
+        "external_url": "td:nth-child(6) a::attr(href)"
+      }
+    }
+  },
+  "transformers": {
+    "clean_whitespace": [
+      "sender",
+      "title",
+      "publish_date",
+      "last_date",
+      "current_status"
+    ],
+    "resolve_url": [
+      "doc_url",
+      "external_url"
+    ]
+  }
+}
