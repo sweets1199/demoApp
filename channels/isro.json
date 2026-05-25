@@ -1,0 +1,32 @@
+{
+  "target_url": "https://www.isro.gov.in/ViewAllOpportunities.html",
+  "list_container": "div#ViewAllOpportunities table tr:nth-child(n+2)",
+  "fields": {
+    "location": "td:nth-child(1)",
+    "title": "td:nth-child(2)",
+    "advertisement_no": "td:nth-child(3)",
+    "publish_date": "td:nth-child(4)",
+    "last_date": "td:nth-child(5)"
+  },
+  "metadata_extractors": {
+    "raw_onclick": "td:last-child button::attr(onclick)"
+  },
+  "transformers": {
+    "clean_whitespace": [
+      "location", 
+      "title", 
+      "advertisement_no"
+    ],
+    "regex_extract": {
+      "external_url": {
+        "source": "raw_onclick",
+        "pattern": "\\.href='([^']+)'"
+      }
+    },
+    "date_format": {
+      "fields": ["publish_date", "last_date"],
+      "input_formats": ["dd/MM/yyyy", "MMM dd, yyyy", "dd MMM, yyyy"],
+      "output_format": "yyyy-MM-dd"
+    }
+  }
+}
