@@ -4,7 +4,7 @@
   "fields": {
     "location": "td:nth-child(1)",
     "title": "td:nth-child(2)",
-    "advertisement_no": "td:nth-child(3)",
+    "advt_no": "td:nth-child(3)",
     "publish_date": "td:nth-child(4)",
     "last_date": "td:nth-child(5)"
   },
@@ -15,7 +15,7 @@
     "clean_whitespace": [
       "location", 
       "title", 
-      "advertisement_no"
+      "advt_no"
     ],
     "regex_extract": {
       "external_url": {
@@ -27,6 +27,9 @@
       "fields": ["publish_date", "last_date"],
       "input_formats": ["dd/MM/yyyy", "MMM dd, yyyy", "dd MMM, yyyy"],
       "output_format": "yyyy-MM-dd"
-    }
+    },
+    "resolve_url": [
+      "external_url"
+    ]
   }
 }
