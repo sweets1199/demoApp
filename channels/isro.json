@@ -20,7 +20,7 @@
     "regex_extract": {
       "external_url": {
         "source": "raw_onclick",
-        "pattern": "href\s*=\s*['"]([^'"]+)['"]"
+        "pattern": "href\\s*=\\s*['\"]([^'\"]+)['\"]"
       }
     },
     "date_format": {
