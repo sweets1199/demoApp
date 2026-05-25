@@ -1,4 +1,4 @@
-ent{
+{
   "target_url": "https://www.barc.gov.in/careers/recruitment.html",
   "list_container": "div.card-body table tr:nth-child(n+2)",
   "fields": {
