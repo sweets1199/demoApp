@@ -12,10 +12,18 @@
       "title"
     ],
     "regex_extract": {
-      "publish_date": {
+      "raw_date": {
         "source": "external_url",
-        "pattern": "/uploads/(\\d{4})/(\\d{2})/"
+        "pattern": "/uploads/\\d{4}/\\d{2}/(\\d{8})"
       }
+    },
+    "date_format": {
+      "fields": ["raw_date"],
+      "input_formats": ["yyyyMMdd"],
+      "output_format": "yyyy-MM-dd"
+    },
+    "rename_field": {
+      "raw_date": "publish_date"
     },
     "resolve_url": [
       "external_url"
