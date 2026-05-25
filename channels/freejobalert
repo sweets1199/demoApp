@@ -1,0 +1,43 @@
+{
+  "target_url": "https://www.freejobalert.com/latest-notifications/",
+  "list_container": "h4.latsec",
+  "fields": {
+    "sender": "_self_"
+  },
+  "nested_lists": {
+    "job_entries": {
+      "list_container": "+ table tr:nth-child(n+2)",
+      "fields": {
+        "publish_date": "td:nth-child(1)",
+        "board": "td:nth-child(2)",
+        "post": "td:nth-child(3)",
+        "qualification": "td:nth-child(4)",
+        "advt_no": "td:nth-child(5)",
+        "last_date": "td:nth-child(6)"
+      },
+      "metadata_extractors": {
+        "external_url": "td:last-child a::attr(href)"
+      }
+    }
+  },
+  "transformers": {
+    "clean_whitespace": [
+      "sender", 
+      "publish_date", 
+      "board", 
+      "post", 
+      "qualification", 
+      "advt_no", 
+      "last_date"
+    ],
+    "nullify": {
+      "advt_no": ["–", "-", ""]
+    },
+    "template": {
+      "title": "{board}</br>{post}"
+    },
+    "resolve_url": [
+      "external_url"
+    ]
+  }
+}
