@@ -37,7 +37,7 @@
       "fullname": "NATIONAL ELIGIBILITY CUM ENTRANCE TEST (UG)",
       "logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR15VAorpMv6JpTmoXiQ7pcXe2YYkV1WhNFSQ&s",
       "tags":["central","entrance"],
-      "domain":"https://neet.nta.nic.in/",
+      "domain":"neet.nta.nic.in/",
       "description":"A common and uniform National Eligibility-cum-Entrance Test [(NEET (UG)] for admission to undergraduate medical education in all medical institutions.",
       "config_file": "channels/nta.json",
       "version": 1
