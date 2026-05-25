@@ -1,0 +1,28 @@
+{
+  "target_url": "https://drdo.gov.in/drdo/en/views/ajax?_wrapper_format=drupal_ajax&title=&sort_by=field_date_of_publishing_value&items_per_page=50&view_name=vacancies&view_display_id=page_1&view_args=&view_path=%2Fofferings%2Fvacancies&view_base_path=offerings%2Fvacancies&view_dom_id=2ab0d5a7f1ad8e92789aa8af22bdb7200a0a55076f6f7c03dc5146602b944766&pager_element=0&_drupal_ajax=1&ajax_page_state%5Btheme%5D=drdo_dbim&ajax_page_state%5Btheme_token%5D=&ajax_page_state%5Blibraries%5D=eJxtj1kOwjAMRC-UNl-cJ3KaIUpxahS70HJ6VpVF_NieN17kCDO0gOUoihT2hW9SPc0mQedYi7n4vyVjQiN2UcTUGh13PpLiS29lN2rHZFD79DNLJO7UVi5T_nQqVClD3SByKFD_yqO2P6i_b3g3h0yeJuLVynCHDX6SVonLBS61JCHFUn-vZ5HMCNug_wVOVzXU55engrP6R-xppOULVEkz4woQNoho", 
+  "data_type": "JSON_EMBEDDED_HTML",
+  "html_source_path": "$[2].data",
+  "list_container": "div.vacanciess-box",
+  "fields": {
+    "title": "div.vacanciess-title",
+    "advt_no": "div.vacanciess-advertisment-no-content",
+    "publish_date": "div.vacanciess-date-publish-content",
+    "start_date": "div.vacanciess-start-date-content",
+    "last_date": "div.vacanciess-due-date-content"
+  },
+  "metadata_extractors": {
+    "external_url": "div.vacanciess-view-node a::attr(href)"
+  },
+  "transformers": {
+    "clean_whitespace": [
+      "title",
+      "advt_no",
+      "publish_date",
+      "start_date",
+      "last_date"
+    ],
+    "resolve_url": [
+      "external_url"
+    ]
+  }
+}
