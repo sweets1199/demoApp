@@ -21,6 +21,16 @@
       "description":"he Bhabha Atomic Research Centre (BARC) is India's premier nuclear research facility, headquartered in Trombay, Mumbai, Maharashtra, India. It was founded by Homi Jehangir Bhabha as the Atomic Energy Establishment, Trombay (AEET) in January 1954 as a multidisciplinary research program essential for India's nuclear program.",
       "config_file": "channels/barc.json",
       "version": 1
+    },, {
+      "cid": 3,
+      "name":"FreeJobAlert",
+      "fullname": "Free Job Aler",
+      "logo":"https://img2.freejobalert.com/common/logo.jpg",
+      "tags":["central","job","state","scientist","research","civil","entrance"],
+      "domain":"www.freejobalert.com",
+      "description":"FreeJobAlert.com provides free job alert service to job seekers in India on latest government jobs, on study material and on video lessons with online test.",
+      "config_file": "channels/freejobalert.json",
+      "version": 1
     }
   ]
 }
