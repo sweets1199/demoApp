@@ -1,0 +1,24 @@
+{
+  "path": "/public-notices/",
+  "list_container": "div.wpb_wrapper ul ul li",
+  "fields": {
+    "title": "a"
+  },
+  "metadata_extractors": {
+    "external_url": "a::attr(href)"
+  },
+  "transformers": {
+    "clean_whitespace": [
+      "title"
+    ],
+    "regex_extract": {
+      "publish_date": {
+        "source": "external_url",
+        "pattern": "/uploads/(\\d{4})/(\\d{2})/"
+      }
+    },
+    "resolve_url": [
+      "external_url"
+    ]
+  }
+}
