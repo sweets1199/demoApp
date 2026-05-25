@@ -71,6 +71,16 @@
       "description":"",
       "config_file": "channels/ppsc.json",
       "version": 1
+    }, {
+      "cid": 8,
+      "name":"DRDO",
+      "fullname": "Defence Research and Development Organisation",
+      "logo":"https://upload.wikimedia.org/wikipedia/mai/3/3e/DRDO-logo.png?20181202072616",
+      "tags":["central","job","research"],
+      "domain":"drdo.gov.in",
+      "description":"",
+      "config_file": "channels/drdo.json",
+      "version": 1
     }
   ]
 }
