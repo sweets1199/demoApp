@@ -2,7 +2,7 @@
   "target_url": "https://www.barc.gov.in/careers/recruitment.html",
   "list_container": "div.card-body table tr:nth-child(n+2)",
   "fields": {
-    "advertisment_no": "td:nth-child(1)",
+    "advt_no": "td:nth-child(1)",
     "title": "td:nth-child(2)",
     "last_date": "td:nth-child(3)"
   },
@@ -12,7 +12,7 @@
   },
   "transformers": {
     "clean_whitespace": [
-      "advertisement_no", 
+      "advt_no", 
       "title", 
       "last_date"
     ],
