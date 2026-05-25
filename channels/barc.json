@@ -2,13 +2,13 @@
   "target_url": "https://www.barc.gov.in/careers/recruitment.html",
   "list_container": "div.card-body table tr:nth-child(n+2)",
   "fields": {
-    "advertisement_no": "td:nth-child(1)",
+    "advt_no": "td:nth-child(1)",
     "title": "td:nth-child(2)",
-    "last_date": "td:nth-child(3)"
-  },
-  "metadata_extractors": {
+    "last_date": "td:nth-child(3)",
     "external_url": "td:nth-child(2) a::attr(href)",
     "doc_url": "td:nth-child(4) a::attr(href)"
+  },
+  "metadata_extractors": {
   },
   "transformers": {
     "clean_whitespace": [
