@@ -15,7 +15,7 @@
       "cid": 2,
       "name":"BARC",
       "fullname": "Bhabha Atomic Research Centre",
-      "logo":"https://www.barc.gov.in/images/BARC-Logo.svg",
+      "logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtJ-lOw5WwrGqCfIMgdvTaX16OQQd_RbOr1Q&s",
       "tags":["central","job","scientist","research"],
       "domain":"www.barc.gov.in",
       "description":"he Bhabha Atomic Research Centre (BARC) is India's premier nuclear research facility, headquartered in Trombay, Mumbai, Maharashtra, India. It was founded by Homi Jehangir Bhabha as the Atomic Energy Establishment, Trombay (AEET) in January 1954 as a multidisciplinary research program essential for India's nuclear program.",
@@ -40,6 +40,36 @@
       "domain":"neet.nta.nic.in/",
       "description":"A common and uniform National Eligibility-cum-Entrance Test [(NEET (UG)] for admission to undergraduate medical education in all medical institutions.",
       "config_file": "channels/nta.json",
+      "version": 1
+    }, {
+      "cid": 5,
+      "name":"RPSC",
+      "fullname": "Rajasthan Public Service Commission",
+      "logo":"https://rpsc.rajasthan.gov.in/Images/RPSC_Logo.png",
+      "tags":["rajasthan","job"],
+      "domain":"rpsc.rajasthan.gov.in",
+      "description":"The Rajasthan Public Service Commission is a body with authority under the Constitution of India to select applicants for appointment to civil service jobs in the Indian state of Rajasthan according to the merits of the applicants and the rules of reservation.",
+      "config_file": "channels/rpsc.json",
+      "version": 1
+    }, {
+      "cid": 6,
+      "name":"Haryana PSC",
+      "fullname": "Haryana Public Service Commission",
+      "logo":"https://upload.wikimedia.org/wikipedia/en/7/77/Haryana_Public_Service_Commission_Logo.png",
+      "tags":["haryana","job"],
+      "domain":"hpsc.gov.in",
+      "description":"The Haryana Public Service Commission is a government agency of the state of Haryana, India, established by the Constitution of India, responsible for the recruitment of candidates for various government jobs under the Government of Haryana through competitive examinations.",
+      "config_file": "channels/hpsc.json",
+      "version": 1
+    }, {
+      "cid": 7,
+      "name":"Punjab PSC",
+      "fullname": "Punjab Public Service Commission",
+      "logo":"https://cdn.s3waas.gov.in/s38cb22bdd0b7ba1ab13d742e22eed8da2/uploads/2019/05/2019052938.jpg",
+      "tags":["rajasthan","job"],
+      "domain":"ppsc.gov.in",
+      "description":"",
+      "config_file": "channels/ppsc.json",
       "version": 1
     }
   ]
