@@ -1,6 +1,6 @@
 {
   "path": "/public-notices/",
-  "list_container": "div.wpb_wrapper ul ul li",
+  "list_container": "div.wpb_wrapper ul li",
   "fields": {
     "title": "a"
   },
