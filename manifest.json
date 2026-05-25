@@ -31,6 +31,16 @@
       "description":"FreeJobAlert.com provides free job alert service to job seekers in India on latest government jobs, on study material and on video lessons with online test.",
       "config_file": "channels/freejobalert.json",
       "version": 1
+    }, {
+      "cid": 4,
+      "name":"NEET (UG)",
+      "fullname": "NATIONAL ELIGIBILITY CUM ENTRANCE TEST (UG)",
+      "logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR15VAorpMv6JpTmoXiQ7pcXe2YYkV1WhNFSQ&s",
+      "tags":["central","entrance"],
+      "domain":"https://neet.nta.nic.in/",
+      "description":"A common and uniform National Eligibility-cum-Entrance Test [(NEET (UG)] for admission to undergraduate medical education in all medical institutions.",
+      "config_file": "channels/nta.json",
+      "version": 1
     }
   ]
 }
