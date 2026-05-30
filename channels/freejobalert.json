@@ -1,5 +1,5 @@
 {
-  "target_url": "/latest-notifications/",
+  "target_url": "https://www.freejobalert.com/latest-notifications/",
   "list_container": "h4.latsec",
   "fields": {
     "sender": "_self_"
