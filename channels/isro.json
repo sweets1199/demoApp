@@ -12,11 +12,6 @@
     "raw_onclick": "td:last-child button::attr(onclick)"
   },
   "transformers": {
-    "clean_whitespace": [
-      "location", 
-      "title", 
-      "advt_no"
-    ],
     "regex_extract": {
       "external_url": {
         "source": "raw_onclick",
@@ -30,6 +25,9 @@
     },
     "resolve_url": [
       "external_url"
+    ],
+    "remove_fields": [
+      "raw_onclick"
     ]
   }
 }
