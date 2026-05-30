@@ -1,6 +1,6 @@
 {
   "path": "/public-notices/",
-  "list_container": "div.wpb_wrapper > ul > li",
+"list_container": "div.wpb_wrapper > ul > li",
   "fields": {
     "title": "_self_"
   },
@@ -8,22 +8,20 @@
     "external_url": "a::attr(href)"
   },
   "transformers": {
-    "clean_whitespace": [
-      "title"
-    ],
     "regex_extract": {
-      "raw_date": {
+      "publish_date": {
         "source": "external_url",
         "pattern": "/uploads/\\d{4}/\\d{2}/(\\d{8})"
       }
     },
     "date_format": {
-      "fields": ["raw_date"],
-      "input_formats": ["yyyyMMdd"],
+      "fields": [
+        "publish_date"
+      ],
+      "input_formats": [
+        "yyyyMMdd"
+      ],
       "output_format": "yyyy-MM-dd"
-    },
-    "rename_field": {
-      "raw_date": "publish_date"
     },
     "resolve_url": [
       "external_url"
