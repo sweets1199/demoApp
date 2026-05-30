@@ -1,0 +1,16 @@
+{
+  "target_url": "https://hppsc.hp.gov.in/CommonControls/CMSContinuousLinkPagePV?qs=mhlKjiXMMIs8EEr8lZxERNMoHNx55ZkbIcwiRzGGx7anL%2Fmy725XOVnAneHEkz383luV85qKude70bFLtkm562v5EMUWAP9HistzrAJJYbg%3D",
+  "list_container": "table tbody tr",
+  "fields": {
+    "title": "td:nth-child(2) a span",
+    "publish_date": "td:nth-child(3)"
+  },
+  "metadata_extractors": {
+    "external_url": "td:nth-child(2) a::attr(href)"
+  },
+  "transformers": {
+    "resolve_url": [
+      "external_url"
+    ]
+  }
+}
