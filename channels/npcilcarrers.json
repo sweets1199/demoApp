@@ -6,7 +6,7 @@
   },
   "nested_lists": {
     "table_rows": {
-      "list_container": "table tr:nth-child(n+2)",
+      "list_container": "table:first-of-type tr:nth-child(n+2)",
       "fields": {
         "title": "td:nth-child(2)",
         "publish_date": "td:nth-child(3)",
@@ -20,13 +20,6 @@
     }
   },
   "transformers": {
-    "clean_whitespace": [
-      "sender",
-      "title",
-      "publish_date",
-      "last_date",
-      "current_status"
-    ],
     "resolve_url": [
       "doc_url",
       "external_url"
