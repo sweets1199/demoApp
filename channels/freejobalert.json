@@ -6,7 +6,7 @@
   },
   "nested_lists": {
     "job_entries": {
-      "list_container": "~ table:first-of-type tr:nth-child(n+2)",
+      "list_container": "_next_sibling:table tr:nth-child(n+2)",
       "fields": {
         "publish_date": "td:nth-child(1)",
         "board": "td:nth-child(2)",
