@@ -91,6 +91,16 @@
       "description":"The Nuclear Power Corporation of India Limited (NPCIL) is an Indian public sector undertaking based in Mumbai, Maharashtra. It is wholly owned by the Government of India and is responsible for the generation of electricity from nuclear power. NPCIL is administered by the Department of Atomic Energy (DAE).",
       "config_file": "channels/npcilcarrers.json",
       "version": 1
+    }, {
+      "cid": 10,
+      "name":"HPPSC",
+      "fullname": "Himachal Pradesh Public Service Commission",
+      "logo":"https://hppsc.hp.gov.in/CommonControls/CMSFileView?qs=oeMK915q2HmOm8CDEgkyjhj77eUvHQnIr7n9XgZE0XogKI6Q61IBts5k1W6yC8GjhbPFOEU8%2Bw7UrKeMhPcvTA%3D%3D",
+      "tags":["state","job"],
+      "domain":"hppsc.hp.gov.in",
+      "description":"",
+      "config_file": "channels/hppsc.json",
+      "version": 1
     }
   ]
 }
