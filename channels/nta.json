@@ -14,15 +14,6 @@
         "pattern": "/uploads/\\d{4}/\\d{2}/(\\d{8})"
       }
     },
-    "date_format": {
-      "fields": [
-        "publish_date"
-      ],
-      "input_formats": [
-        "yyyyMMdd"
-      ],
-      "output_format": "yyyy-MM-dd"
-    },
     "resolve_url": [
       "external_url"
     ]
