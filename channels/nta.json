@@ -1,6 +1,6 @@
 {
   "target_url": "/public-notices/",
-"list_container": "div.wpb_wrapper > ul > li",
+"list_container": "div.wpb_wrapper ul li",
   "fields": {
     "title": "_self_"
   },
