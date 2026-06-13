@@ -1,5 +1,5 @@
 {
-  "target_url": "https://neet.nta.nic.in/public-notices",
+  "target_url": "/public-notices/",
 "list_container": "div.wpb_wrapper > ul > li",
   "fields": {
     "title": "_self_"
