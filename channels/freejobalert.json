@@ -24,7 +24,7 @@
       "replacement": ""
     },
     "template": {
-      "title": "{board_temp}</br>{post_temp}"
+      "title": "{board_temp} • {post_temp}"
     },
     "resolve_url": ["external_url"]
   }
