@@ -1,6 +1,6 @@
 {
   "target_url": "https://uppsc.up.nic.in/Default.aspx",
-  "list_container": "div.resp-tabs-container:first-of-type marquee span.content-sect",
+  "list_container": "marquee span.content-sect, div.Press_Segment li",
   "request_chain": [
     {
       "method": "GET",
@@ -11,7 +11,7 @@
     }
   ],
   "static_values": {
-    "sender": "Notice Board" 
+    "sender": "UPPSC Update"
   },
   "fields": {
     "title": "a",
@@ -24,7 +24,7 @@
     "regex_extract": {
       "last_date": {
         "source": "raw_text",
-        "pattern": "(\\d{2}[-/]\\d{2}[-/]\\d{4})"
+        "pattern": "(\\d{2}[-/]\\d{2}[-/]\\d{4}|\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4})"
       }
     },
     "resolve_url": [
