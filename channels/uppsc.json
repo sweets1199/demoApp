@@ -1,0 +1,37 @@
+{
+  "target_url": "https://uppsc.up.nic.in/Default.aspx",
+  "list_container": "div.resp-tabs-container:first-of-type marquee span.content-sect",
+  "request_chain": [
+    {
+      "method": "GET",
+      "url": "https://uppsc.up.nic.in/Default.aspx",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0"
+      }
+    }
+  ],
+  "static_values": {
+    "sender": "Notice Board" 
+  },
+  "fields": {
+    "title": "a",
+    "raw_text": "_parent_"
+  },
+  "metadata_extractors": {
+    "external_url": "a::attr(href)"
+  },
+  "transformers": {
+    "regex_extract": {
+      "last_date": {
+        "source": "raw_text",
+        "pattern": "(\\d{2}[-/]\\d{2}[-/]\\d{4})"
+      }
+    },
+    "resolve_url": [
+      "external_url"
+    ],
+    "remove_fields": [
+      "raw_text"
+    ]
+  }
+}
