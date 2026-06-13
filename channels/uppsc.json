@@ -15,7 +15,7 @@
   },
   "fields": {
     "title": "a",
-    "raw_text": "_parent_"
+    "raw_text": "_self_"
   },
   "metadata_extractors": {
     "external_url": "a::attr(href)"
