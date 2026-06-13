@@ -6,5 +6,25 @@
   },
   "metadata_extractors": {
     "external_url": "a::attr(href)"
+  },
+  "transformers": {
+    "regex_extract": {
+      "publish_date": {
+        "source": "external_url",
+        "pattern": "/uploads/\\d{4}/\\d{2}/(\\d{8})"
+      }
+    },
+    "date_format": {
+      "fields": [
+        "publish_date"
+      ],
+      "input_formats": [
+        "yyyyMMdd"
+      ],
+      "output_format": "yyyy-MM-dd"
+    },
+    "resolve_url": [
+      "external_url"
+    ]
   }
 }
