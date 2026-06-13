@@ -101,6 +101,16 @@
       "description":"",
       "config_file": "channels/hppsc.json",
       "version": 1
+    }, {
+      "cid": 11,
+      "name":"UPPSC",
+      "fullname": "Uttar Pradesh Public Service Commission",
+      "logo":"https://hppsc.hp.gov.in/CommonControls/CMSFileView?qs=oeMK915q2HmOm8CDEgkyjhj77eUvHQnIr7n9XgZE0XogKI6Q61IBts5k1W6yC8GjhbPFOEU8%2Bw7UrKeMhPcvTA%3D%3D",
+      "tags":["state","job"],
+      "domain":"uppsc.up.nic.in",
+      "description":"",
+      "config_file": "channels/uppsc.json",
+      "version": 1
     }
   ]
 }
