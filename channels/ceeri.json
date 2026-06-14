@@ -1,0 +1,54 @@
+[
+  {
+    "target_url": "https://www.csir.res.in/en/career-opportunities/recruitment",
+    "list_container": "div.content-area table tbody tr",
+    "static_values": {
+      "sender": "active"
+    },
+    "fields": {
+      "title": "td:nth-child(2)",
+      "advt_no": "td:nth-child(3)",
+      "publish_date": "td:nth-child(4)",
+      "doc_label": "td:nth-child(6) span.file a"
+    },
+    "metadata_extractors": {
+      "external_url": "td:nth-child(5) a::attr(href)",
+      "doc_url": "td:nth-child(6) span.file a::attr(href)"
+    },
+    "transformers": {
+      "resolve_url": [
+        "external_url",
+        "doc_url"
+      ]
+    }
+  },
+  {
+    "target_url": "https://www.csir.res.in/en/career-opportunities/recruitment/archive-recruitment?page={page}",
+    "pagination": {
+      "type": "url_replace",
+      "page_placeholder": "{page}",
+      "start_page": 1,
+      "max_pages": 3
+    },
+    "list_container": "div.content-area table tbody tr",
+    "static_values": {
+      "sender": "archived"
+    },
+    "fields": {
+      "title": "td:nth-child(2)",
+      "advt_no": "td:nth-child(3)",
+      "publish_date": "td:nth-child(4)",
+      "doc_label": "td:nth-child(6) span.file a"
+    },
+    "metadata_extractors": {
+      "external_url": "td:nth-child(5) a::attr(href)",
+      "doc_url": "td:nth-child(6) span.file a::attr(href)"
+    },
+    "transformers": {
+      "resolve_url": [
+        "external_url",
+        "doc_url"
+      ]
+    }
+  }
+]
