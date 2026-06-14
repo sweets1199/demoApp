@@ -111,6 +111,27 @@
       "description":"",
       "config_file": "channels/uppsc.json",
       "version": 1
+    }, {
+      "cid": "csir",
+      "name":"CSIR",
+      "fullname": "Council of Scientific & Industrial Research",
+      "logo":"https://www.csir.res.in/themes/csir/img/csir-logo.png",
+      "tags":["central","job"],
+      "domain":"www.csir.res.in",
+      "description":"",
+      "config_file": "channels/csir.json",
+      "version": 1
+    }, {
+      "cid": "ceeri",
+      "name":"CEERI",
+      "fullname": "Central Electronics Engineering Research Institute",
+      "logo":"https://www.ceeri.res.in/wp-content/uploads/2025/05/Master_logo_Blue01052025.png",
+      "tags":["central","job"],
+      "domain":"www.ceeri.res.in",
+      "description":"",
+      "config_file": "channels/ceeri.json",
+      "version": 1
     }
+
   ]
 }
