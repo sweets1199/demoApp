@@ -1,0 +1,22 @@
+{
+  "target_url": "https://www.ceeri.res.in/recruitments/page/{page}/",
+  "pagination": {
+    "type": "url_replace",
+    "page_placeholder": "{page}",
+    "start_page": 1,
+    "max_pages": 3
+  },
+  "list_container": "div#posts-container article",
+  "fields": {
+    "title": "div.fusion-post-content h2 a",
+    "publish_date": "div.fusion-post-content p.fusion-single-line-meta span:first-of-type"
+  },
+  "metadata_extractors": {
+    "external_url": "div.fusion-post-content h2 a::attr(href)"
+  },
+  "transformers": {
+    "resolve_url": [
+      "external_url"
+    ]
+  }
+}
